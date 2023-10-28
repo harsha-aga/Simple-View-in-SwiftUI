@@ -14,7 +14,7 @@ struct ContextView: View {
                 .font(.title)
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/).scaledToFill()
             Text("Creating a simple view using swiftUI").scaledToFill()
-        }
+        }.background(Color.gray)
     }
 }
 
