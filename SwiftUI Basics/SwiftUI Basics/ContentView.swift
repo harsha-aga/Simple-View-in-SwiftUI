@@ -11,11 +11,12 @@ struct ContentView: View {
     @State var size: CGSize = .zero
     var body: some View {
         HStack {
-            AnimationImageView().frame(height: size.height)
+            AnimationImageView().frame(height: size.height).padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: -8))
             ContextView().padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 8)).overlay(Color.clear.modifier(SizeCal(size: $size)))
-            RedirectionButton().padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 16))
+            RedirectionButton().padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 16)).background(Color.yellow)
             Spacer()
         }
+        .background(.yellow)
     }
 }
 
